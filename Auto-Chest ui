@@ -93,6 +93,6 @@ TextLabel.BorderColor3 = Color3.new(0.207843, 0.207843, 0.207843)
 TextLabel.Position = UDim2.new(-0.299656123, 0, 19.1475391, 0)
 TextLabel.Size = UDim2.new(0, 175, 0, 27)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Made by Error_IDK"
+TextLabel.Text = "Made by น้ำสุดหล่อ"
 TextLabel.TextColor3 = Color3.new(0, 0, 0)
 TextLabel.TextSize = 14
