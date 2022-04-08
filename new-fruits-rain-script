@@ -1,4 +1,4 @@
-if game.CoreGui:FindFirstChild("Hoho_Hub") then game.CoreGui:FindFirstChild("Hoho_Hub"):Destroy() end
+if game.CoreGui:FindFirstChild("NAM-Hub") then game.CoreGui:FindFirstChild("NAM_Hub"):Destroy() end
 --[[
 local Drop = Instance.new("ScreenGui")
 local Drop_2 = Instance.new("ImageLabel")
@@ -227,7 +227,7 @@ DISTEXT.BackgroundTransparency = 0.700
 DISTEXT.Position = UDim2.new(0, 0, 0.49473685, 0)
 DISTEXT.Size = UDim2.new(1, 0, 0.157894731, 0)
 DISTEXT.Font = Enum.Font.SourceSans
-DISTEXT.Text = "Discord: https://discord.gg/6GV2dDWXdn"
+DISTEXT.Text = "Discord: https://discord.gg/PJgMwnVq"
 DISTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
 DISTEXT.TextScaled = true
 DISTEXT.TextSize = 14.000
@@ -276,7 +276,7 @@ CoppyDis.MouseButton1Click:Connect(function()
 	if click == false then
 		click = true
     		pcall(function()
-		  setclipboard("https://discord.gg/6GV2dDWXdn")
+		  setclipboard("https://discord.gg/PJgMwnVq")
 	  	end)
 		CoppyDis.Text = "Copied"
 		wait(0.5)
@@ -321,7 +321,7 @@ end)
 wait()
 function pe_Button()
 local ui = Instance.new("ScreenGui")
-ui.Name = "Toggle HOHO"
+ui.Name = "Toggle NAM"
 ui.Parent = game.CoreGui
 ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -340,7 +340,7 @@ OPENCLOSE.TextWrapped = true
 Instance.new("UICorner",OPENCLOSE)
 OPENCLOSE.MouseButton1Click:Connect(function()
 	pcall(function()
-		game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
+		game.CoreGui:FindFirstChild("NAM_Hub").Enabled = not game.CoreGui:FindFirstChild("NAM_Hub").Enabled
 	end)
 end)
 end
@@ -391,13 +391,13 @@ end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
-repeat wait() until game.CoreGui:FindFirstChild("Hoho_Hub")
+repeat wait() until game.CoreGui:FindFirstChild("NAM_Hub")
 wait(1)
 pe_Button()
 game:GetService("UserInputService").InputBegan:Connect(function(input, chat)
 	if not chat and input.KeyCode == Enum.KeyCode.RightControl then
 		pcall(function()
-			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
+			game.CoreGui:FindFirstChild("NAM_Hub").Enabled = not game.CoreGui:FindFirstChild("NAM_Hub").Enabled
 		end)
 	end
 end)
